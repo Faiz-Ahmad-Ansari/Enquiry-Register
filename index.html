@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enquiry Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <h1>Enquiry Register</h1>
+    <div class="form" id="myForm">    
+        <p id="p">Please fill in the form to register new enquiry</p>
+        
+        <label for="Enquiry no.">Enquiry Number</label>
+        <input type="number" name="Enquiry no." id="Enquiry no." placeholder="Enter Enquiry No.">
+
+        <label for="Enquiry Date">Enquiry Date</label>
+        <input type="text" name="Enquiry Date" id="Enquiry Date" placeholder="Enter Enquiry Date">
+
+        <label for="Client Name">Client Name</label>
+        <input type="text" name="Client Name" id="Client Name" placeholder="Enter Client Name">
+
+        <button type="button" onclick="newEnquiry()">Submit</button>
+    </div>    
+        <table id="myTable">
+            <tr>
+                <th>Enquiry Number</th>
+                <th>Enquiry Date</th>
+                <th>Client Name</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>20-06-2019</td>
+                <td>BGR Energy Systems Limited</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>22-06-2019</td>
+                <td>Technip India Limited</td>
+            </tr>
+
+
+        </table>
+    
+<script src="hello.js"></script>
+
+</body>
+</html>
