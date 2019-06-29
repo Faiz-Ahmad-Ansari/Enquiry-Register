@@ -13,3 +13,13 @@ table, th, td {
 th, td {
     text-align: center;
 }
+h1 {
+margin: 10px;
+text-align: center;
+}
+th {
+    background-color: darkgray;
+}
+tr:hover {
+    background-color: corns;
+}

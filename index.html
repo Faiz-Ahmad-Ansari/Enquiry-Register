@@ -8,19 +8,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <hr>
     <h1>Enquiry Register</h1>
+    <hr>
     <div class="form" id="myForm">    
-        <p id="p">Please fill in the form to register new enquiry</p>
+        
         
         <label for="Enquiry no.">Enquiry Number</label>
         <input type="number" name="Enquiry no." id="Enquiry no." placeholder="Enter Enquiry No.">
 
         <label for="Enquiry Date">Enquiry Date</label>
-        <input type="text" name="Enquiry Date" id="Enquiry Date" placeholder="Enter Enquiry Date">
+        <input type="date" name="Enquiry Date" id="Enquiry Date" placeholder="Enter Enquiry Date">
 
         <label for="Client Name">Client Name</label>
         <input type="text" name="Client Name" id="Client Name" placeholder="Enter Client Name">
+
+        <label for="Due Date">Due Date</label>
+        <input type="date" name="Due Date" id="Due Date" placeholder="Due Date">
 
         <button type="button" onclick="newEnquiry()">Submit</button>
     </div>    
@@ -29,16 +33,22 @@
                 <th>Enquiry Number</th>
                 <th>Enquiry Date</th>
                 <th>Client Name</th>
+                <th>Due Date</th>
+                
             </tr>
             <tr>
                 <td>1001</td>
-                <td>20-06-2019</td>
+                <td>20/06/2019</td>
                 <td>BGR Energy Systems Limited</td>
+                <td>30/06/2019</td>
+                
             </tr>
             <tr>
                 <td>1002</td>
-                <td>22-06-2019</td>
+                <td>22/06/2019</td>
                 <td>Technip India Limited</td>
+                <td>29/06/2019</td>
+                
             </tr>
 
 
