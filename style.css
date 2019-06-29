@@ -18,8 +18,9 @@ margin: 10px;
 text-align: center;
 }
 th {
-    background-color: darkgray;
+    background-color: crimson;
+    color: white;
 }
 tr:hover {
-    background-color: corns;
+    background-color: lightgoldenrodyellow;
 }

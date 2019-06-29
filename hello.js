@@ -14,6 +14,7 @@ function newEnquiry() {
     cell1.innerHTML=enqNum;
 
     var enqDt = document.getElementById("Enquiry Date").value;
+    console.log(enqDt);
     cell2.innerHTML=enqDt;
     
     var clientName = document.getElementById("Client Name").value;
