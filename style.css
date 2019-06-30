@@ -7,6 +7,7 @@ table{
     width: 100%;
     border-spacing: 5px;
     margin-top: 7px;
+    margin-bottom: 10px;
 }
 
 table, th, td {
@@ -55,4 +56,9 @@ label{
     margin: 10px;
     cursor: pointer;
     width: 99%;
+}
+.sign{
+    text-align: center;
+    margin: 5px;
+    color: gray;
 }
