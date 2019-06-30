@@ -37,10 +37,22 @@ function newEnquiry() {
     var fullDate = new Date();
 
     var date = fullDate.getDate();
-    var month = fullDate.toISOString().substr(5,2);
+    var month = fullDate.getMonth()+1;
     var year = fullDate.getFullYear();
+    
+    if (date<10) {
+        var myDate = "0"+date; 
+    }else{
+        var myDate = date; 
+    }
 
-    var myDate = date + "/" + month + "/" + year ;
+    if (month<10) {
+        var myMonth = "0"+month;
+    }else{
+        var myMonth = month;
+    }
+    
+    var myDate1 = myDate + "/" + myMonth + "/" + year ;
     
     var table = document.getElementById("myTable");
     var tr = table.getElementsByTagName("tr");
@@ -49,9 +61,8 @@ function newEnquiry() {
         td = tr[i].getElementsByTagName("td")[3];
             if (td) {
                 txtValue = td.innerText;
-             //   console.log(td);
         
-                if (txtValue == myDate) {
+                if (txtValue == myDate1) {
                     tr[i].style.backgroundColor="yellow";    
                 }
         }
@@ -59,29 +70,40 @@ function newEnquiry() {
     document.getElementById("myForm").style.display="none";
 }
 
-    // For highlight row as per todays date
-    var fullDate = new Date();
+  // For highlight row as per todays date
+  var fullDate = new Date();
 
-    var date = fullDate.getDate();
-    var month = fullDate.toISOString().substr(5,2);
-    var year = fullDate.getFullYear();
+  var date = fullDate.getDate();
+  var month = fullDate.getMonth()+1;
+  var year = fullDate.getFullYear();
+  
+  if (date<10) {
+      var myDate = "0"+date; 
+  }else{
+      var myDate = date; 
+  }
 
-    var myDate = date + "/" + month + "/" + year ;
-    
-    var table = document.getElementById("myTable");
-    var tr = table.getElementsByTagName("tr");
- 
-    for (i=0; i < tr.length; i++){
-        td = tr[i].getElementsByTagName("td")[3];
-            if (td) {
-                txtValue = td.innerText;
-             //   console.log(td);
-        
-                if (txtValue == myDate) {
-                    tr[i].style.backgroundColor="yellow";    
-                }
-        }
-    }
+  if (month<10) {
+      var myMonth = "0"+month;
+  }else{
+      var myMonth = month;
+  }
+  
+  var myDate1 = myDate + "/" + myMonth + "/" + year ;
+  
+  var table = document.getElementById("myTable");
+  var tr = table.getElementsByTagName("tr");
+
+  for (i=0; i < tr.length; i++){
+      td = tr[i].getElementsByTagName("td")[3];
+          if (td) {
+              txtValue = td.innerText;
+      
+              if (txtValue == myDate1) {
+                  tr[i].style.backgroundColor="yellow";    
+              }
+      }
+  }
 //open form button
 function openForm() {
     document.getElementById("myForm").style.display="block";
