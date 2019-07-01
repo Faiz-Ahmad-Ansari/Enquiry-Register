@@ -70,7 +70,7 @@ function newEnquiry() {
     document.getElementById("myForm").style.display="none";
 }
 
-  // For highlight row as per todays date
+  // For highlight row as per todays date 2
   var fullDate = new Date();
 
   var date = fullDate.getDate();
@@ -93,7 +93,9 @@ function newEnquiry() {
   
   var table = document.getElementById("myTable");
   var tr = table.getElementsByTagName("tr");
-
+    //for todays date in second row
+  var td4row2 = tr[2].getElementsByTagName("td")[3];
+    td4row2.innerHTML=myDate1;
   for (i=0; i < tr.length; i++){
       td = tr[i].getElementsByTagName("td")[3];
           if (td) {
@@ -104,6 +106,7 @@ function newEnquiry() {
               }
       }
   }
+
 //open form button
 function openForm() {
     document.getElementById("myForm").style.display="block";
